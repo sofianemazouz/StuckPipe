@@ -15,8 +15,8 @@ import streamlit.components.v1 as components
 # =========================
 # Page setup
 # =========================
+st.image("logo.png",width=200)
 st.set_page_config(layout="wide", page_title="🚨Drilling IDSS🚨")
-
 st.title("🚨 AI Drilling Early Warning System")
 st.markdown("### Intelligent Decision Support System (IDSS) for Stuck Pipe Prevention")
 st.markdown("---")
@@ -44,6 +44,8 @@ for k, v in defaults.items():
 # =========================
 # Sidebar controls
 # =========================
+
+st.logo(image="logo2.png",icon_image="logo.png",size="large")
 st.sidebar.subheader("Controls")
 
 stop_pressed = st.sidebar.button("🔇 Stop current alarm")
